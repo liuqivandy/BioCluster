@@ -9,7 +9,7 @@
 #' @param adjp the cutoff of adjusted p-value to identify markers (default: 0.01)
 #' @param topn the number of marker genes (default: 20)
 #' @param bulk indicate the external is from bulk RNAseq (TRUE) or single-cell RNA-seq (FALSE) (default:TRUE)
-#' @return a Seurat object with the score and p-value associated with each subcluster
+#' @return a Seurat object with the score and p-value associated with each subcluster stored in misc$BioCluster
 #' @export
 
 
@@ -191,7 +191,7 @@ PlotBioCluster<-function(obj,node.size=NULL, node.color=NULL, node.text=NULL,ret
 #' @param node.size node size; either a numeric value or NULL ;  if NULL, the size of each node is determined by the size of the cluster (default:NULL) 
 #' @param node.color node color; either a color or  NULL ; if NULL, the color of each node is determined by the resolution (default:NULL)
 #' @param node.text  node text; either NULL, "cluster" or others; if NULL, the node text is the new cluster id after pruning; if "cluster", node text is the cluster ID at each resolution; if others, node text is not shown(default:NULL)
-#' @return a list containing a seurat object with the final clustering result after pruning and a ggplot object 
+#' @return a list containing a Seurat object with the final clustering result after pruning and a ggplot object 
 #' @export
 
 BioCluster_prune<-function(obj,score.cutoff=0.2,pval.cutoff=0.05,node.size=NULL, node.color=NULL, node.text=NULL) {
