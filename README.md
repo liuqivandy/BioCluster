@@ -42,7 +42,7 @@ lungobj1<-BioCluster(lungobj1,lung_bulk)
 PlotBioCluster(lungobj1)
 ```
 <p align="center">
-  <img width="800"  src="https://github.com/liuqivandy/BioCluster/PBMC_toy.png">
+  <img width="800"  src="https://github.com/liuqivandy/BioCluster/Plotcluster.png">
 </p>
 
 ```R
@@ -52,7 +52,7 @@ pruneres<-BioCluster_prune(lungobj1)
 DimPlot(pruneres$obj,label=T)+NoLegend()
 ```
 <p align="center">
-  <img width="800"  src="https://github.com/liuqivandy/BioCluster/PBMC_toy.png">
+  <img width="800"  src="https://github.com/liuqivandy/BioCluster/dimplot.png">
 </p>
 
 ```R
@@ -60,12 +60,8 @@ DimPlot(pruneres$obj,label=T)+NoLegend()
 pruneres$ggplot
 ```
 <p align="center">
-  <img width="800"  src="https://github.com/liuqivandy/BioCluster/PBMC_toy.png">
+  <img width="800"  src="https://github.com/liuqivandy/BioCluster/pruneresult">
 </p>
-
-
-## prune the clustering result and 
-
 
 <a name="Citation"/>
 
