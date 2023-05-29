@@ -28,8 +28,9 @@ devtools::install_github("liuqivandy/BioCluster")
 ```R
 library(BioCluster)
 library(data.table)
-## load the processed seurat object lungobj1 generated from lung single-cell RNAseq data (GSE)
+## load the processed seurat object lungobj1 generated from lung single-cell RNAseq data (GSE130148)
 load(url("https://www.dropbox.com/s/c3veuuuu9dk73nw/lung_dropseq1.Rdata?dl=1"))
+
 ## read the bulk lung RNAseq from GTEx
 lung_bulk<-data.frame(fread("https://storage.googleapis.com/gtex_analysis_v8/rna_seq_data/gene_tpm/gene_tpm_2017-06-05_v8_lung.gct.gz"),row.names=1)
 lung_bulk<-lung_bulk[!duplicated(lung_bulk[,2]),]
@@ -38,6 +39,7 @@ lung_bulk<-lung_bulk[,c(-1,-2)]
 
 ## evaluate the biological reproducibility of each subcluster of lungobj1 in the GTEx bulk lung expression
 lungobj1<-BioCluster(lungobj1,lung_bulk)
+
 ## Plot the BioCluster result
 PlotBioCluster(lungobj1)
 ```
@@ -48,6 +50,7 @@ PlotBioCluster(lungobj1)
 ```R
 ## Prune the clustering by removing splits that are not supported by the external dataset
 pruneres<-BioCluster_prune(lungobj1)
+
 ##plot the final clustering result
 DimPlot(pruneres$obj,label=T)+NoLegend()
 ```
