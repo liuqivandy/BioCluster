@@ -42,7 +42,7 @@ lungobj1<-BioCluster(lungobj1,lung_bulk)
 PlotBioCluster(lungobj1)
 ```
 <p align="center">
-  <img width="800"  src="https://github.com/liuqivandy/BioCluster/Plotcluster.png">
+  <img width="800"  src="https://github.com/liuqivandy/BioCluster/blob/master/dimplot.png">
 </p>
 
 ```R
