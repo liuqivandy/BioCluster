@@ -37,7 +37,7 @@ lung_bulk<-lung_bulk[!duplicated(lung_bulk[,2]),]
 rownames(lung_bulk)<-lung_bulk[,2]
 lung_bulk<-lung_bulk[,c(-1,-2)]
 
-## evaluate the biological reproducibility of each subcluster of lungobj1 in the GTEx bulk lung expression
+## evaluate the biological reproducibility of each subcluster of lungobj1 in the external GTEx lung expression
 lungobj1<-BioCluster(lungobj1,lung_bulk)
 
 ## Plot the BioCluster result
