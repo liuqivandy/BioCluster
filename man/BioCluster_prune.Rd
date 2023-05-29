@@ -27,7 +27,7 @@ BioCluster_prune(
 \item{node.text}{node text; either NULL, "cluster" or others; if NULL, the node text is the new cluster id after pruning; if "cluster", node text is the cluster ID at each resolution; if others, node text is not shown(default:NULL)}
 }
 \value{
-a list containing a seurat object with the final clustering result after pruning and a ggplot object
+a list containing a Seurat object with the final clustering result after pruning and a ggplot object
 }
 \description{
 Visualizing the pruned result

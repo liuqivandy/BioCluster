@@ -33,7 +33,7 @@ BioCluster(
 \item{bulk}{indicate the external is from bulk RNAseq (TRUE) or single-cell RNA-seq (FALSE) (default:TRUE)}
 }
 \value{
-a Seurat object with the score and p-value associated with each subcluster
+a Seurat object with the score and p-value associated with each subcluster stored in misc$BioCluster
 }
 \description{
 Estimate the support of one cluster grouped into several subclusters by the external dataset

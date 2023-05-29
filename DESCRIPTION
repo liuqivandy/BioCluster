@@ -7,7 +7,7 @@ Maintainer: Qi Liu <qi.liu@vumc.org>
 Description: Estimate the biological meaningfulness of substructures in single-cell transcriptomics data
 License: LGPL
 Encoding: UTF-8
-Depends: Seurat,dplyr,ggplot2,patchwork,igraph,tidygraph,ggraph
+Depends: Seurat(>= 4.1.0),dplyr,ggplot2,patchwork,igraph(>= 1.3.1),tidygraph(>= 1.2.2),ggraph(>= 2.1.0)
 Imports: clustree
 Suggests: RColorBrewer (>= 1.1),
 RoxygenNote: 7.2.1
