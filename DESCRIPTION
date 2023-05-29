@@ -1,0 +1,13 @@
+Package: BioCluster
+Type: Package
+Title: Estimate biological meaningfulness of substructures 
+Version: 0.1.0
+Author: Qi Liu
+Maintainer: Qi Liu <qi.liu@vumc.org>
+Description: Estimate the biological meaningfulness of substructures in single-cell transcriptomics data
+License: LGPL
+Encoding: UTF-8
+Depends: Seurat,dplyr,ggplot2,patchwork,igraph,tidygraph,ggraph
+Imports: clustree
+Suggests: RColorBrewer (>= 1.1),
+RoxygenNote: 7.2.1
